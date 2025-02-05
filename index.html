@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-blue-600 text-white p-6">
+        <h1 class="text-3xl font-bold text-center">Mon Nom</h1>
+        <nav>
+            <ul class="flex justify-center space-x-4 mt-4">
+                <li><a href="#projets" class="hover:underline">Projets</a></li>
+                <li><a href="#competences" class="hover:underline">Compétences</a></li>
+                <li><a href="#contact" class="hover:underline">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto my-10 p-6 bg-white rounded shadow">
+        <section id="projets" class="mb-8">
+            <h2 class="text-2xl font-semibold">Mes Projets</h2>
+            <div class="space-y-4 mt-4">
+                <div class="project">
+                    <h3 class="font-bold">Projet 1 : Mon Site Web</h3>
+                    <img src="images/drapeau.png" alt="Aperçu de mon site web" class="w-full h-auto" />
+                    <p>Nom du Site : [Nom de votre restaurant]
+
+                        Présentation :
+                        J'ai créé un site web pour [Nom de votre restaurant], une destination culinaire qui propose une expérience gastronomique unique. Le site a été conçu pour refléter l'ambiance chaleureuse et accueillante de notre établissement, tout en mettant en avant notre menu diversifié et nos spécialités.
+                        
+                        Fonctionnalités Clés :
+                        
+                        Menu en Ligne : Les visiteurs peuvent explorer notre menu complet, comprenant des plats végétariens, des spécialités locales et des desserts faits maison. Chaque plat est accompagné d'une description détaillée et d'une photo appétissante.
+                        Réservations Faciles : Le site permet aux clients de réserver une table en ligne, facilitant ainsi la planification de leur visite. Un calendrier interactif aide à choisir la date et l'heure souhaitées.
+                        Galerie de Photos : Une section dédiée aux photos présente notre ambiance, nos plats et les événements spéciaux pour donner aux visiteurs un aperçu de ce qu'ils peuvent attendre lors de leur visite.
+                        Blog Culinaire : Une section de blog partage des recettes, des astuces de cuisine et des histoires derrière certains de nos plats, renforçant notre engagement envers la communauté culinaire.
+                        Contact et Localisation : Les informations de contact et la localisation de notre restaurant sont faciles à trouver, avec un plan intégré pour guider les visiteurs.
+                        Objectif :
+                        Le site vise à attirer les amateurs de bonne cuisine, à informer les clients potentiels sur nos offres et à simplifier le processus de réservation. En mettant en avant notre passion pour la gastronomie, nous espérons créer une connexion authentique avec notre clientèle.</p>
+                    <a href="https://mon-site-web.com" target="_blank" class="text-blue-600 hover:underline">Voir le projet</a>
+                </div>
+                <div class="project">
+                    <h3 class="font-bold">Projet 2 : Application de To-Do</h3>
+                    <img src="images/marques-ordi.jpg" alt="Aperçu de l'application To-Do" class="w-full h-auto" />
+                    <p>Description : Une application de gestion de tâches que j'ai développée avec React.</p>
+                    <a href="https://mon-todo-app.com" target="_blank" class="text-blue-600 hover:underline">Voir le projet</a>
+                </div>
+                <!-- Ajoutez d'autres projets ici -->
+            </div>
+        </section>
+
+        <section id="competences" class="mb-8">
+            <h2 class="text-2xl font-semibold">Mes Compétences</h2>
+            <ul class="list-disc list-inside mt-2">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="mb-8">
+            <h2 class="text-2xl font-semibold">Contact</h2>
+            <form action="https://example.com/submit" method="post" class="mt-4">
+                <div class="mb-4">
+                    <label for="name" class="block">Nom :</label>
+                    <input type="text" id="name" name="name" required class="border rounded w-full p-2">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block">Email :</label>
+                    <input type="email" id="email" name="email" required class="border rounded w-full p-2">
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="block">Mot de passe :</label>
+                    <input type="password" id="password" name="password" required class="border rounded w-full p-2">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block">Message :</label>
+                    <textarea id="message" name="message" rows="4" required class="border rounded w-full p-2"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white rounded p-2">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-gray-200 text-center p-4">
+        <p>&copy; 2025 Mon Nom. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
